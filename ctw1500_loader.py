@@ -140,7 +140,7 @@ def shrink(bboxes, rate, max_shr=20):
         if shrinked_bbox.shape[0] <= 2:
             shrinked_bboxes.append(bbox)
             continue
-        
+      
         shrinked_bboxes.append(shrinked_bbox)
     
     return np.array(shrinked_bboxes)
